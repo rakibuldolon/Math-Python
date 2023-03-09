@@ -1,6 +1,9 @@
 from sympy import Symbol, diff , solve
+from sympy.parsing.sympy_parser import parse_expr
+
 x = Symbol('x')
-f=x**3-9*x**2+2
+f_input = input("Enter a function of x: ")
+f = parse_expr(f_input)
 f1=diff(f,x)
 f2=diff(f1,x)
 sol=solve(f1,x)
