@@ -1,5 +1,4 @@
-from sympy import Symbol, diff , solve
-from sympy.parsing.sympy_parser import parse_expr
+from sympy import Symbol, diff, solve, parse_expr
 
 x = Symbol('x')
 f_input = input("Enter a function of x: ")
